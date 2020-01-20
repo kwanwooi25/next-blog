@@ -1,0 +1,23 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "plugins": ["react"],
+  "extends": [
+    "@kakao/styleguide/comment",
+    "@kakao/styleguide/es3",
+    "@kakao/styleguide/es2015",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2015,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "object-curly-spacing": [2, "always"]
+  }
+}
