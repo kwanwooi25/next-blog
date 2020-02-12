@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import axios from 'axios';
 import MainLayout from '../../layouts/MainLayout';
 import Router from 'next/router';
+import Head from 'next/head';
 
 const Posts = ({ posts = [] }) => {
   const handleClickPost = postId => e => {
@@ -14,6 +15,10 @@ const Posts = ({ posts = [] }) => {
   return (
     <>
       <MainLayout>
+        <Head>
+          <title>Posts | Next Blog</title>
+        </Head>
+
         <h2>Posts</h2>
 
         <ul>

@@ -2,9 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import MainLayout from '../../layouts/MainLayout';
+import Head from 'next/head';
 
 const Post = ({ post: { title, body } }) => (
   <MainLayout>
+    <Head>
+      <title>{title} | Next Blog</title>
+    </Head>
     <h2>{title}</h2>
     <p>{body}</p>
   </MainLayout>

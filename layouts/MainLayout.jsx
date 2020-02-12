@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Head from 'next/head';
 import Header from '../components/Header';
 
 const NAV_LIST = [
@@ -19,6 +20,10 @@ const NAV_LIST = [
 
 const MainLayout = ({ children }) => (
   <>
+    <Head>
+      <title>Next Blog</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+    </Head>
     <Header title="Next-Blog" navList={NAV_LIST} />
     <div className="contents">{children}</div>
 
